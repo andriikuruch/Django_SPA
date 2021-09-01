@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Georgia-italic';
+    src: url("../../css/fonts/georgia/georgia_italic.ttf") format("truetype");
+}
+
+.select_wrapper {
+    position: relative;
+}
+
+/*.select_native,*/
+.select_custom {
+    position: relative;
+    width: 178px;
+    height: 30px;
+    font-family: Georgia-italic, serif;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    color: #606060;
+    cursor: pointer;
+}
+
+/*.select_custom {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    display: none;*/
+/*}*/
+
+/*@media (hover: hover) {*/
+/*    .select_custom {*/
+/*        display: block;*/
+/*    }*/
+
+/*    .select_native:focus + .select_custom {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+/*.select_native:focus,*/
+.select_custom.isActive .select_custom__trigger {
+    outline: none;
+}
+
+/*.select_native,*/
+.select_custom__trigger {
+    padding-left: 3px;
+    border-bottom: 1px solid rgb(149, 149, 149);
+    font-size: 14px;
+}
+
+/*.select_native {*/
+/*    -webkit-appearance: none;*/
+/*    -moz-appearance: none;*/
+/*    background: url("../../icons/arrow_dropdown.svg") no-repeat right bottom 8px;*/
+/*    background-size: 10px;*/
+/*}*/
+
+.select_custom__trigger {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    --background: url("../../icons/arrow_dropdown.svg");
+}
+
+.select_custom__trigger::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-image: var(--background);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    transition: background-image 0.3s ease;
+}
+
+.select_custom__options {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.95);
+    box-shadow: 0 0 4px #e9e1f8;
+    z-index: 1;
+    display: none;
+    font-size: 12px;
+}
+
+.select_custom.isActive .select_custom__options {
+    display: block;
+}
+.select_custom__option {
+    padding: 5px 0 5px 10px;
+}
+
+.select_custom__option.isHover,
+.select_custom__option:hover {
+    color: white;
+    background: rgb(96, 96, 96);
+}

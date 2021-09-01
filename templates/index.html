@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <title>Shoper</title>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <div class="logo">
+                <p>sh</p>
+            </div>
+            <nav class="nav">
+                <a href="/woman" class="nav__link" data-link>Woman</a>
+                <a href="/men" class="nav__link" data-link>Men</a>
+                <a href="/kids" class="nav__link" data-link>Kids</a>
+                <a href="/comming-soon" class="nav__link" data-link>Comming Soon</a>
+                <a href="/about" class="nav__link" data-link>About</a>
+            </nav>
+            <div class="user">
+                <img src="/static/icons/user.svg">
+                <a href="/login" class="user__text" data-link>Log In</a>
+            </div>
+            <div class="basket">
+                <img src="static/icons/basket.svg">
+                <p class="basket__text" >Basket (0)</p>
+                <div class="basket__dropdown">
+                    <div class="basket_scroll_container">
+                        <div class="basket__item">
+                            <img class="basket__item__picture" src="/static/imgs/car.jpg">
+                            <p class="basket__item__title">Coated 5 pocket trousers</p>
+                            <p class="basket__item__price">&#8364;99.95</p>
+                            <div class="basket__item__close">&#10006;</div>
+                        </div>
+
+                        <div class="basket__separation"></div>
+
+                        <div class="basket__item">
+                            <img class="basket__item__picture" src="/static/imgs/car.jpg">
+                            <p class="basket__item__title">Coated 5 pocket trousers</p>
+                            <p class="basket__item__price">&#8364;99.95</p>
+                            <div class="basket__item__close">&#10006;</div>
+                        </div>
+
+                        <div class="basket__separation"></div>
+
+                        <div class="basket__item">
+                            <img class="basket__item__picture" src="/static/imgs/car.jpg">
+                            <p class="basket__item__title">Coated 5 pocket trousers</p>
+                            <p class="basket__item__price">&#8364;99.95</p>
+                            <div class="basket__item__close">&#10006;</div>
+                        </div>
+
+                        <div class="basket__separation"></div>
+
+                        <div class="basket__item">
+                            <img class="basket__item__picture" src="/static/imgs/car.jpg">
+                            <p class="basket__item__title">Coated 5 pocket trousers</p>
+                            <p class="basket__item__price">&#8364;99.95</p>
+                            <div class="basket__item__close">&#10006;</div>
+                        </div>
+
+                        <div class="basket__separation"></div>
+
+                        <div class="basket__item">
+                            <img class="basket__item__picture" src="/static/imgs/car.jpg">
+                            <p class="basket__item__title">Coated 5 pocket trousers</p>
+                            <p class="basket__item__price">&#8364;99.95</p>
+                            <div class="basket__item__close">&#10006;</div>
+                        </div>
+
+                        <div class="basket__separation last"></div>
+                    </div>
+
+                    <div class="basket__checkout">
+                        <p>Subtotal: <span class="basket__checkout__total_amount">&#8364;599.95</span></p>
+                        <button type="button">Checkout</button>
+                    </div>
+                </div>
+            </div>
+            <div class="search">
+                <div class="search__input">
+                    <input type="text" placeholder="Search something...">
+                </div>
+                <div class="search__button">
+                    <img src="static/icons/search.svg">
+                </div>
+            </div>
+        </header>
+        <div class="separation"></div>
+
+        <div class="nav-path"></div>
+
+        <div id="app"></div>
+
+        <footer class="footer">
+            <div class="footer__collection">
+                <p class="footer__text">Collection</p>
+                <ul>
+                    <li><a href="/woman" class="footer__link" data-link>Woman (1725)</a></li>
+                    <li><a href="/men" class="footer__link" data-link>Men (635)</a></li>
+                    <li><a href="/kids" class="footer__link" data-link>Kids (2514)</a></li>
+                    <li><a href="/comming-soon" class="footer__link" data-link>Comming Soon (76)</a></li>
+                </ul>
+            </div>
+            <div class="footer__separation"></div>
+            <div class="footer__site">
+                <p class="footer__text">Site</p>
+                <ul>
+                    <li><a href="#" class="footer__link" data-link>Terms of Service</a></li>
+                    <li><a href="#" class="footer__link" data-link>Privacy Policy</a></li>
+                    <li><a href="#" class="footer__link" data-link>Copyright Policy</a></li>
+                    <li><a href="#" class="footer__link" data-link>Press Kit</a></li>
+                    <li><a href="#" class="footer__link" data-link>Support</a></li>
+                </ul>
+            </div>
+            <div class="footer__separation"></div>
+            <div class="footer__shop">
+                <p class="footer__text">Shop</p>
+                <ul>
+                    <li><a href="#" class="footer__link" data-link>About us</a></li>
+                    <li><a href="#" class="footer__link" data-link>Shipping Methods</a></li>
+                    <li><a href="#" class="footer__link" data-link>Career</a></li>
+                    <li><a href="#" class="footer__link" data-link>Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__separation"></div>
+            <div class="footer__social">
+                <p class="footer__text">Social</p>
+                <ul>
+                    <p class="footer__copyright">Shoper is made with love in Warsaw,<br>
+                        2014 &#169; All rights reserved. EI Passion
+                    </p>
+                </ul>
+                <div class="footer__social_block">
+                    <div class="footer__social__button">
+                        <img src="static/icons/twitter.svg">
+                    </div>
+                    <div class="footer__social__button">
+                        <img src="static/icons/facebook.svg">
+                    </div>
+                    <div class="footer__social__button">
+                        <img src="static/icons/instagram.svg">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script type="module" src="static/js/index.js"></script>
+</body>
+</html>

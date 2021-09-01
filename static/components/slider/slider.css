@@ -1,0 +1,30 @@
+.slider {
+    margin-bottom: 45px;
+    display: flex;
+    overflow: hidden;
+}
+
+.slider__line {
+    display: flex;
+    transition: all ease 1s;
+}
+
+.slider__img {
+    min-height: 118px;
+    min-width: 198px;
+    max-height: 118px;
+    max-width: 198px;
+}
+
+.slider__arrow {
+    height: 118px;
+    width: 39px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    z-index: 5;
+}
+
+.slider__arrow.right {
+    right: calc(50% - 44.3em);
+    transform: rotate(180deg);
+}

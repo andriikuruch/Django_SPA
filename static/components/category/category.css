@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Georgia-italic';
+    src: url("../../css/fonts/georgia/georgia_italic.ttf") format("truetype");
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category__title {
+    margin-top: 70px;
+    letter-spacing: 0.05em;
+    line-height: 36px;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.category__subtitle {
+    margin-top: 7px;
+    font-family: Georgia-italic, serif;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    color: #606060;
+}
+
+.filters {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    position: relative;
+}
+
+/*.select_native,*/
+/*.select_custom {*/
+/*    position: relative;*/
+/*    width: 178px;*/
+/*    height: 30px;*/
+/*}*/
+
+/*.select_custom {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    display: none;*/
+/*}*/
+
+/*@media (hover: hover) {*/
+/*    .select_custom {*/
+/*        display: block;*/
+/*    }*/
+
+/*    .select_native:focus + .select_custom {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
+
+
+
+/*.filters > select {*/
+/*    width: 178px;*/
+/*    height: 30px;*/
+/*    padding-left: 3px;*/
+/*    border-bottom: 1px solid rgb(149, 149, 149);*/
+/*    font-family: Georgia-italic, serif;*/
+/*    line-height: 36px;*/
+/*    letter-spacing: 0.05em;*/
+/*    font-size: 14px;*/
+/*    color: #606060;*/
+/*    cursor: pointer;*/
+
+/*    appearance: none;*/
+/*    -moz-appearance: none;*/
+/*    -webkit-appearance: none;*/
+/*    background: url("../../icons/arrow_dropdown.svg") no-repeat right bottom 8px;*/
+/*    background-size: 10px;*/
+/*    transition: background-image 0.3s ease;*/
+/*}*/
+
+/*.filters > select:focus {*/
+/*    background: url("../../icons/arrow_dropdown_rev.svg") no-repeat right bottom 8px;*/
+/*    background-size: 10px;*/
+/*}*/
+
+/*.filters > select > option {*/
+/*    background: transparent;*/
+/*}*/
+
+/*.filters > select:nth-child(2){*/
+/*    margin: 0 22px;*/
+/*}*/
+
+
+/*.filters > select > option:not(:first-of-type) {*/
+/*    font-size: 12px;*/
+/*}*/
+
